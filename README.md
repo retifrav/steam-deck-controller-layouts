@@ -9,5 +9,7 @@ The numbers in the beginning of folders names are Steam App IDs. If there is no 
 Download layout file and put it to where the game expects it to be:
 
 ```
-/home/deck/.local/share/Steam/steamapps/common/Steam Controller Configs/SOME-ID/config/GAME-NAME/controller_neptune.vdf
+/home/deck/.local/share/Steam/steamapps/common/Steam Controller Configs/YOUR-ACCOUNT-ID/config/GAME-NAME/controller_neptune.vdf
 ```
+
+Also replace `25344765` in file with your `AccountID`.
