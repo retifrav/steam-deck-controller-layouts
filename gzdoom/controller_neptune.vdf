@@ -1,24 +1,24 @@
 "controller_mappings"
 {
 	"version"		"3"
-	"revision"		"42"
-	"title"		"Heretic (GZDoom)"
-	"description"		"Left joystick is WASD movement, left trackpad opens virtual menu with numbers keys for weapons, right trackpad controls the mouse, triggers are mouse buttons, bumpers are scrolling weapons, left back grips are scrolling inventory, right back grips are spring and openning doors, A is jump, Y is centering the camera, X is ENTER, DPad-left is quick-save, DPad-right is quick-load."
+	"revision"		"56"
+	"title"		"GZDoom"
+	"description"		"Left joystick is WASD movement, left trackpad opens virtual menu with numbers keys for weapons, right trackpad controls the mouse, triggers are mouse buttons, bumpers are scrolling weapons, left back grips are scrolling inventory, right back grips are SHIFT and CTRL, A is jump (SPACE), Y is centering the camera (END), X is ENTER, DPad-left is quick-load (F9), DPad-right is quick-save (F6)."
 	"creator"		"76561197985610493"
-	"progenitor"		"usercloud://heretic/controller_neptune"
-	"url"		"autosave:///home/deck/.local/share/Steam/steamapps/common/Steam Controller Configs/25344765/config/heretic/controller_neptune.vdf"
+	"progenitor"		"usercloud://gzdoom/controller_neptune"
+	"url"		"autosave:///home/deck/.local/share/Steam/steamapps/common/Steam Controller Configs/25344765/config/gzdoom/controller_neptune.vdf"
 	"export_type"		"personal_local"
 	"controller_type"		"controller_neptune"
 	"controller_caps"		"23117823"
 	"major_revision"		"0"
 	"minor_revision"		"0"
-	"Timestamp"		"-828895840"
+	"Timestamp"		"-820596448"
 	"localization"
 	{
 		"english"
 		{
-			"title"		"Heretic (GZDoom)"
-			"description"		"Left joystick is WASD movement, left trackpad opens virtual menu with numbers keys for weapons, right trackpad controls the mouse, triggers are mouse buttons, bumpers are scrolling weapons, left back grips are scrolling inventory, right back grips are spring and openning doors, A is jump, Y is centering the camera, X is ENTER, DPad-left is quick-save, DPad-right is quick-load."
+			"title"		"GZDoom"
+			"description"		"Left joystick is WASD movement, left trackpad opens virtual menu with numbers keys for weapons, right trackpad controls the mouse, triggers are mouse buttons, bumpers are scrolling weapons, left back grips are scrolling inventory, right back grips are SHIFT and CTRL, A is jump (SPACE), Y is centering the camera (END), X is ENTER, DPad-left is quick-load (F9), DPad-right is quick-save (F6)."
 		}
 	}
 	"group"
@@ -97,7 +97,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press F, , "
+							"binding"		"key_press END, , "
 						}
 						"settings"
 						{
@@ -222,10 +222,26 @@
 		"description"		""
 		"inputs"
 		{
+			"click"
+			{
+				"activators"
+				{
+					"Soft_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press RETURN, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
 		"settings"
 		{
-			"sensitivity"		"80"
+			"sensitivity"		"60"
 			"sensitivity_vert_scale"		"70"
 			"doubetap_max_duration"		"320"
 		}
@@ -330,7 +346,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press RETURN, , "
+							"binding"		"key_press CAPSLOCK, , "
 						}
 						"settings"
 						{
@@ -468,7 +484,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press F9, , "
+							"binding"		"key_press F6, , "
 						}
 						"settings"
 						{
@@ -488,7 +504,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press F6, , "
+							"binding"		"key_press F9, , "
 						}
 						"settings"
 						{
@@ -686,6 +702,22 @@
 	}
 	"group"
 	{
+		"id"		"13"
+		"mode"		"absolute_mouse"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"sensitivity_vert_scale"		"50"
+			"gyro_button"		"1"
+			"gyro_ratchet_button_mask"		"1048576"
+		}
+	}
+	"group"
+	{
 		"id"		"6"
 		"mode"		"switches"
 		"name"		""
@@ -780,7 +812,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press E, , "
+							"binding"		"key_press LEFT_CONTROL, , "
 						}
 					}
 				}
@@ -854,6 +886,7 @@
 			"5"		"right_trigger active"
 			"9"		"right_joystick active"
 			"7"		"dpad active"
+			"13"		"gyro active"
 		}
 	}
 	"settings"
